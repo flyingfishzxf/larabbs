@@ -64,7 +64,7 @@
                         <div class="form-group {{ $errors->has('captcha') ? ' has-error' : '' }}">
                             <label for="captcha" class="col-md-4 control-label">验证码</label>
 
-                            <div class="col-md-6 register-page">
+                            <div class="col-md-6">
                                 <input name="captcha" id="captcha" class="form-control">
 
                                 <img src="{{ captcha_src('flat') }}" title="点击图片重新获取验证码" onclick="this.src='/captcha/flat?'+Math.random()" class="thumbnail captcha">
